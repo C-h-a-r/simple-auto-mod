@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 const config = require('./config.json')
+const db = require('wio.db')
 
 client.on("ready", async () => {
   console.log(`Bot Is Ready To Go - ${client.user.tag}`);
