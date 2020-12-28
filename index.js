@@ -1,5 +1,5 @@
-const Discord = require('discord.js')
-const client = new Discord.Client()
+const discord = require('discord.js')
+const client = new discord.Client()
 const config = require('./config.json')
 const db = require('wio.db')
 
@@ -45,11 +45,11 @@ const user = message.member
 
       if (warns > 2) {
           const member = message.guild.roles.cache.find(
- (role) => role.name === 'config.memberRole'
+ (role) => role.name === 'Member'
 );
 
 const mute = message.guild.roles.cache.find(
- (role) => role.name === 'config.muteRole'
+ (role) => role.name === 'Muted'
 );
 
 const chatEmbed = new discord.MessageEmbed()
