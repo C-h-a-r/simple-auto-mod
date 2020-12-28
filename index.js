@@ -37,7 +37,7 @@ const user = message.member
         .setDescription(`Message: ${message.content}`)
 
       message.delete()
-      message.channel.send(`**${message.author}, you are not allowed to send cuss words here! More warnings will result in a mute!**`)
+      message.channel.send(`**${message.author}, you are not allowed to send that here! More warnings will result in a mute!**`)
       log.send(logEmbed)
       db.add(`warns_${message.author}`, 1)
 
