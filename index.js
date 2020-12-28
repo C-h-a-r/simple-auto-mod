@@ -8,7 +8,7 @@ client.on("ready", async () => {
 
 
 
-
+client.login(process.env.TOKEN)
 
 const { badwords } = require("./data.json") 
 
